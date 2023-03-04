@@ -1,0 +1,88 @@
+﻿<Window x:Class="MediaPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaPlayer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <MediaElement x:Name= "media" LoadedBehavior="Manual" Grid.Column="1"  Grid.ColumnSpan="4" Grid.Row="1" Grid.RowSpan="3" MediaOpened="media_MediaOpened" MediaEnded="media_MediaEnded"/>
+        <Slider x:Name="audioSlider" Grid.Row="4" Grid.ColumnSpan="6"
+                Grid.RowSpan="1" VerticalAlignment="Center"
+                ValueChanged="audioSlider_ValueChanged"/>
+        <Button x:Name="button1" Content="Открыть файл" Click="Button_Click" Grid.ColumnSpan="6"/>
+        <ListBox x:Name="track_list" d:ItemsSource="{d:SampleData ItemCount=5}"  Grid.ColumnSpan="6" Grid.RowSpan="4" Margin="133,72,133,0" SelectionChanged="track_list_SelectionChanged"/>
+        <Button x:Name="button2" Content="Start" Click="Button_Click2" Grid.Row="5" VerticalAlignment="Center" Width="100px" Height="30px"/>
+        <Button x:Name="button3" Content="Stop" Click="Button_Click3" Grid.Row="5" VerticalAlignment="Center" Grid.Column="1"  Width="100px" Height="30px"/>
+        <Button x:Name="button5" Content="Prewiew" Click="Button_Click5" Grid.Row="5" VerticalAlignment="Center" Grid.Column="3"  Width="100px" Height="30px"/>
+        <Button x:Name="button6" Content="Return" Click="Button_Click6" Grid.Row="5" VerticalAlignment="Center" Grid.Column="4"  Width="100px" Height="30px"/>
+        <Button x:Name="button7" Content="Mix" Click="Button_Click7" Grid.Row="5" VerticalAlignment="Center" Grid.Column="5"  Width="100px" Height="30px"/>
+        <Label x:Name="labl1"  Grid.Row="4" Width="40" Height="30" VerticalAlignment="Bottom"/>
+        <Label x:Name="labl2"  Grid.Row="4" Grid.Column="5" Width="40" Height="30" VerticalAlignment="Bottom"/>
+        <Button x:Name="button4" Content="Next" Click="Button_Click4" Grid.Row="5" VerticalAlignment="Center" Grid.Column="2"  Width="100px" Height="30px"/>
+    </Grid>
+</Window>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
